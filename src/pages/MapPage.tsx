@@ -5,9 +5,13 @@ import Icon from "@/components/ui/icon";
 
 const MapPage = () => {
   const [routeActive, setRouteActive] = useState(false);
+  const [routeFrom, setRouteFrom] = useState("");
+  const [routeTo, setRouteTo] = useState("");
   const [selectedPoint, setSelectedPoint] = useState<{ name: string; rating: number } | null>(null);
 
-  const handleBuildRoute = (_from: string, _to: string) => {
+  const handleBuildRoute = (from: string, to: string) => {
+    setRouteFrom(from);
+    setRouteTo(to);
     setRouteActive(true);
   };
 
@@ -18,6 +22,8 @@ const MapPage = () => {
         <MapView
           onPointSelect={(p) => setSelectedPoint({ name: p.name, rating: p.rating })}
           routeActive={routeActive}
+          routeFrom={routeFrom}
+          routeTo={routeTo}
         />
 
         {/* Search panel overlay */}
@@ -31,7 +37,7 @@ const MapPage = () => {
             <div className="flex items-center justify-between mb-3">
               <h3 className="text-sm font-semibold text-foreground">Маршрут построен</h3>
               <button
-                onClick={() => setRouteActive(false)}
+                onClick={() => { setRouteActive(false); setRouteFrom(""); setRouteTo(""); }}
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Icon name="X" size={15} />
