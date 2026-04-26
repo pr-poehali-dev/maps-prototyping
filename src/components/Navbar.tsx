@@ -25,8 +25,12 @@ const Navbar = ({ activePage, onNavigate }: NavbarProps) => {
       <nav className="hidden md:flex flex-col glass border-r border-border w-16 h-full shrink-0 py-4 items-center justify-between z-10">
         <div className="flex flex-col items-center gap-1">
           {/* Logo */}
-          <div className="w-9 h-9 rounded-xl bg-[#38bdf8]/20 border border-[#38bdf8]/30 flex items-center justify-center mb-4">
-            <Icon name="Navigation" size={16} className="text-[#38bdf8]" />
+          <div className="w-10 h-10 rounded-xl overflow-hidden mb-4 shrink-0">
+            <img
+              src="https://cdn.poehali.dev/projects/01a31de7-cd01-4828-a0d9-07c310f83a65/bucket/71a5b18a-ba03-467e-9a6e-6666a5df8856.jpg"
+              alt="Teleru"
+              className="w-full h-full object-cover"
+            />
           </div>
 
           {NAV_ITEMS.map((item) => (
