@@ -65,12 +65,12 @@ const AboutPage = () => {
                   <Icon name="Navigation" size={22} className="text-[#38bdf8]" />
                 </div>
                 <div>
-                  <h2 className="text-xl font-bold text-foreground">NaviRoute</h2>
+                  <h2 className="text-xl font-bold text-foreground">Teleru</h2>
                   <p className="text-xs text-muted-foreground">Навигация нового поколения</p>
                 </div>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                NaviRoute — интеллектуальный навигационный сервис, который помогает
+                Teleru — интеллектуальный навигационный сервис, который помогает
                 добираться до любой точки города быстро, удобно и без стресса.
                 Реальное время, умные маршруты и персонализация под каждого пользователя.
               </p>
@@ -143,7 +143,7 @@ const AboutPage = () => {
           </div>
 
           {/* Version */}
-          <p className="text-center text-xs text-muted-foreground/50">NaviRoute v1.0.0 · 2026</p>
+          <p className="text-center text-xs text-muted-foreground/50">Teleru v1.0.0 · 2026</p>
         </div>
       </div>
     </div>

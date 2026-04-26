@@ -43,7 +43,7 @@ const ContactPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
             {[
               { icon: "MessageCircle", label: "Чат", desc: "Ответ за 5 минут", color: "#38bdf8", action: "Написать" },
-              { icon: "Mail", label: "Email", desc: "support@naviroute.ru", color: "#4ade80", action: "Отправить" },
+              { icon: "Mail", label: "Email", desc: "support@teleru.ru", color: "#4ade80", action: "Отправить" },
               { icon: "Phone", label: "Телефон", desc: "8 800 123-45-67", color: "#a78bfa", action: "Позвонить" },
             ].map((c) => (
               <div key={c.label} className="glass rounded-xl p-4 flex flex-col gap-3 hover-lift">
