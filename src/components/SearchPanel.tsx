@@ -51,8 +51,10 @@ const SearchPanel = ({ onBuildRoute }: SearchPanelProps) => {
               address: item.value,
             }))
           );
-        })
-        .finally(() => setLoading(false));
+          setLoading(false);
+        }, () => {
+          setLoading(false);
+        });
     }, 350);
   };
 
